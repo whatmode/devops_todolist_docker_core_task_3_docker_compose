@@ -27,7 +27,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.mysql
+      tags:
+        - "mysql:1.0"
     container_name: mysql
+
     ports:
       - "3306:3306"
     volumes:
